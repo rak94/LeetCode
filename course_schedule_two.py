@@ -17,14 +17,15 @@ class CourseScheduleTwo:
 
             cycle.add(crs)
             for pre in preMap[crs]:
-                if not dfs(pre): return False
+                if dfs(pre) == False:
+                    return False
             cycle.remove(crs)
             visited.add(crs)
             output.append(crs)
             return True
 
         for c in range(numCourses):
-            if not dfs(c): False
-            return []
+            if dfs(c) == False:
+                return []
 
         return output
