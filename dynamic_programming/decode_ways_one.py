@@ -1,5 +1,5 @@
 class DecodeWays:
-    def decode_str_int(self, s: str) -> str:
+    def decode_str_int(self, s: str) -> int:
         decSet = { len(s) : 1 }
 
         for i in range(len(s) - 1, -1, -1):
