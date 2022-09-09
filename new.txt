@@ -1,2 +1,3 @@
 new commit on the branch
 add new line
+new value
